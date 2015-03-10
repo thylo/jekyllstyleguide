@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
 html
 {
   font:normal 1em/1.5 'Helvetica', 'Arial', sans-serif;
@@ -18,14 +20,15 @@ table,fieldset,hr
 
 h1, h2, h3, h4, h5, h6
 {
-  font:normal 100%/1.2 'Helvetica', 'Arial', sans-serif;
+  font:normal 100%/1.2 'Roboto','Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
 }
 
 h1
 {
   margin-bottom: .5em;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -81,4 +84,16 @@ h6
 ol, ul
 {
   padding:0 0 0 1.5em;
+}
+
+/* ----------------------- *\
+=links
+\* ----------------------- */
+
+a{
+  color:orangered;
+  //It's an application, the user will probably visit the pages multiple times
+  &:visited{
+    color: orangered;
+  }
 }
